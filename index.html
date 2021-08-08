@@ -1,20 +1,63 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="main-post-list hidden">
+<head>
+    <meta charset="utf-8" />
+    <title>MyBlog</title>
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.tags | join:' ' }}</span><a class="btn-border-small" href={{ post.url }}>继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?"> -->
 
-  {% include pagination.html %}
+    <link rel="stylesheet" href="css/xiangce.css" />
+</head>
 
-</div>
+<body>
+    <!--/*外层最大容器*/-->
+    <div class="wrap">
+        <!--	/*包裹所有元素的容器*/-->
+
+        <div class="cube">
+            <!--前面图片 -->
+            <div class="out_front">
+                <img src="img/1.jpg" class="pic">
+            </div>
+            <!--后面图片 -->
+            <div class="out_back">
+                <img src="img/2.jpg" class="pic">
+            </div>
+            <!--左图片 -->
+            <div class="out_left">
+                <img src="img/3.jpg" class="pic">
+            </div>
+            <div class="out_right">
+                <img src="img/4.jpg" class="pic">
+            </div>
+            <div class="out_top">
+                <img src="img/5.jpg" class="pic">
+            </div>
+            <div class="out_bottom">
+                <img src="img/6.jpg" class="pic">
+            </div>
+            <!--小正方体 -->
+            <span class="in_front">
+                <img src="img/7.jpg" class="in_pic" />
+            </span>
+            <span class="in_back">
+                <img src="img/8.jpg" class="in_pic" />
+            </span>
+            <span class="in_left">
+                <img src="img/9.jpg" class="in_pic" />
+            </span>
+            <span class="in_right">
+                <img src="img/10.jpg" class="in_pic" />
+            </span>
+            <span class="in_top">
+                <img src="img/11.jpg" class="in_pic" />
+            </span>
+            <span class="in_bottom">
+                <img src="img/12.jpg" class="in_pic" />
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
