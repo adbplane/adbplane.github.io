@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--MyBlog-->
+<html>
+
+<head>
+	<title>generic</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="shortcut icon" type="image/x-icon" href="/b.ico?">
+	<style>
+
+	</style>
+</head>
+
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+				</a>
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">个人主页</a></li>
+				<li><a href="generic.html">学习</a></li>
+				<li><a href="generic.html">生活</a></li>
+				<li><a href="generic.html">娱乐</a></li>
+				<li><a href="generic.html">感悟</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>Generic Page</h1>
+				<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+				<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+					venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
+					sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu
+					massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
+					Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis,
+					hendrerit tristique.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
+					taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+					libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
+					ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
+					Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
+					Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
+				<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet
+					dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque
+					leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum
+					convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>留言区</h2>
+					<form id="content" method="post">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="您的名字" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="您的邮箱" />
+							</div>
+							<div class="field">
+								<textarea name="message" class="contact-area required" id="message"
+									placeholder="您的建议"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="发送" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>关注</h2>
+					<ul class="icons">
+						<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
+						</li>
+						<li><a href="https://github.com/adbplane" class="icon brands style2 fa-github"><span
+									class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+						<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+						<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="https://github.com/adbplane">adbplane</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+<script>
+	$("#btn").on("click", function () {
+		var obj = $("#content").serialize();  //获取id为content的form表单里面的内容,name值均为formspree提供不能更改
+		$.ajax({
+			type: "post",						//必须post请求
+			url: "https://formspree.io/3024196839@qq.com", //abc@qq.com换成你要接收的邮箱地址
+			async: true,
+			data: obj,
+			dataType: "json",
+			success: res => {
+				alert('邮件已发送!!!');   			//发送成功后的操作
+			},
+			error: res => {
+				alert("未知错误,发送失败");
+			}
+		});
+	})
+	$(document).on('click', '#submit', function (evt) {
+		if ($(".contact-area").val() == "") {
+			$(".contact-area").val("您的建议不能为空 !");
+			evt.preventDefault();  //阻止提交表单到第三方网站去
+		}
+	});
+
+
+</script>
+
+</html>
