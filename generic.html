@@ -26,7 +26,7 @@
 
 				<!-- Logo -->
 				<a href="index.html" class="logo">
-					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">My_Blog</span>
 				</a>
 
 				<!-- Nav -->
@@ -134,32 +134,5 @@
 	<script src="assets/js/main.js"></script>
 
 </body>
-
-<script>
-	$("#btn").on("click", function () {
-		var obj = $("#content").serialize();  //获取id为content的form表单里面的内容,name值均为formspree提供不能更改
-		$.ajax({
-			type: "post",						//必须post请求
-			url: "https://formspree.io/3024196839@qq.com", //abc@qq.com换成你要接收的邮箱地址
-			async: true,
-			data: obj,
-			dataType: "json",
-			success: res => {
-				alert('邮件已发送!!!');   			//发送成功后的操作
-			},
-			error: res => {
-				alert("未知错误,发送失败");
-			}
-		});
-	})
-	$(document).on('click', '#submit', function (evt) {
-		if ($(".contact-area").val() == "") {
-			$(".contact-area").val("您的建议不能为空 !");
-			evt.preventDefault();  //阻止提交表单到第三方网站去
-		}
-	});
-
-
-</script>
 
 </html>
