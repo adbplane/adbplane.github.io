@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://adbplane.github.io</id>
+    <title>G Blog</title>
+    <updated>2025-12-15T12:29:05.580Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://adbplane.github.io"/>
+    <link rel="self" href="https://adbplane.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://adbplane.github.io/images/avatar.png</logo>
+    <icon>https://adbplane.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, G Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello ！]]></title>
+        <id>https://adbplane.github.io/post/hello/</id>
+        <link href="https://adbplane.github.io/post/hello/">
+        </link>
+        <updated>2024-08-13T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>Wellcom to G Blog</p>
+]]></content>
+    </entry>
+</feed>
